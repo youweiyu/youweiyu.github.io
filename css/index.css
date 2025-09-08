@@ -1559,116 +1559,122 @@ blockquote > :last-child {
   --hlscrollbar-bg: #1f1f1f;
   --hlexpand-bg: linear-gradient(180deg, rgba(23,23,23,0.6), rgba(23,23,23,0.9));
 }
+.container pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+  line-height: 1.6;
+}
+.container pre[class*='language-'].line-numbers > code {
+  position: relative;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+.container pre[class*='language-'].line-numbers .line-numbers-rows {
+  position: absolute;
+  top: 0;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  font-size: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.container pre[class*='language-'].line-numbers .line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+  pointer-events: none;
+}
+.container pre[class*='language-'].line-numbers .line-numbers-rows > span:before {
+  display: block;
+  padding-right: 0.8em;
+  color: var(--hlnumber-color);
+  content: counter(linenumber);
+  text-align: right;
+}
+pre[class*='language-'] .token.comment,
+pre[class*='language-'] .token.prolog,
+pre[class*='language-'] .token.doctype,
+pre[class*='language-'] .token.cdata {
+  color: #6272a4;
+}
+pre[class*='language-'] .token.punctuation {
+  color: #f8f8f2;
+}
+pre[class*='language-'] .namespace {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+pre[class*='language-'] .token.property,
+pre[class*='language-'] .token.tag,
+pre[class*='language-'] .token.constant,
+pre[class*='language-'] .token.symbol,
+pre[class*='language-'] .token.deleted {
+  color: #ff79c6;
+}
+pre[class*='language-'] .token.boolean,
+pre[class*='language-'] .token.number {
+  color: #bd93f9;
+}
+pre[class*='language-'] .token.selector,
+pre[class*='language-'] .token.attr-name,
+pre[class*='language-'] .token.string,
+pre[class*='language-'] .token.char,
+pre[class*='language-'] .token.builtin,
+pre[class*='language-'] .token.inserted {
+  color: #50fa7b;
+}
+pre[class*='language-'] .token.operator,
+pre[class*='language-'] .token.entity,
+pre[class*='language-'] .token.url,
+pre[class*='language-'] .language-css .token.string,
+pre[class*='language-'] .style .token.string,
+pre[class*='language-'] .token.variable {
+  color: #f8f8f2;
+}
+pre[class*='language-'] .token.atrule,
+pre[class*='language-'] .token.attr-value,
+pre[class*='language-'] .token.function,
+pre[class*='language-'] .token.class-name {
+  color: #f1fa8c;
+}
+pre[class*='language-'] .token.keyword {
+  color: #8be9fd;
+}
+pre[class*='language-'] .token.regex,
+pre[class*='language-'] .token.important {
+  color: #ffb86c;
+}
+pre[class*='language-'] .token.important,
+pre[class*='language-'] .token.bold {
+  font-weight: bold;
+}
+pre[class*='language-'] .token.italic {
+  font-style: italic;
+}
+pre[class*='language-'] .token.entity {
+  cursor: help;
+}
 @-moz-document url-prefix() {
   scrollbar-color: var(--hlscrollbar-bg) transparent;
 }
-figure.highlight table::-webkit-scrollbar-thumb {
+.container pre[class*='language-']::-webkit-scrollbar-thumb {
   background: var(--hlscrollbar-bg);
 }
-figure.highlight pre .deletion {
-  color: #bf42bf;
+.container pre[class*='language-']:not(.line-numbers) {
+  padding: 10px 20px;
 }
-figure.highlight pre .addition {
-  color: #105ede;
+.container pre[class*='language-'] .caption {
+  margin-left: -3.8em;
+  padding: 4px 16px !important;
 }
-figure.highlight pre .meta {
-  color: #c792ea;
-}
-figure.highlight pre .comment {
-  color: #676e95;
-}
-figure.highlight pre .variable,
-figure.highlight pre .attribute,
-figure.highlight pre .regexp,
-figure.highlight pre .ruby .constant,
-figure.highlight pre .xml .tag .title,
-figure.highlight pre .xml .pi,
-figure.highlight pre .xml .doctype,
-figure.highlight pre .html .doctype,
-figure.highlight pre .css .id,
-figure.highlight pre .tag .name,
-figure.highlight pre .css .class,
-figure.highlight pre .css .pseudo {
-  color: #ff5370;
-}
-figure.highlight pre .tag {
-  color: #89ddff;
-}
-figure.highlight pre .number,
-figure.highlight pre .preprocessor,
-figure.highlight pre .literal,
-figure.highlight pre .params,
-figure.highlight pre .constant,
-figure.highlight pre .command {
-  color: #f78c6c;
-}
-figure.highlight pre .built_in {
-  color: #ffcb6b;
-}
-figure.highlight pre .ruby .class .title,
-figure.highlight pre .css .rules .attribute,
-figure.highlight pre .string,
-figure.highlight pre .value,
-figure.highlight pre .inheritance,
-figure.highlight pre .header,
-figure.highlight pre .ruby .symbol,
-figure.highlight pre .xml .cdata,
-figure.highlight pre .special,
-figure.highlight pre .number,
-figure.highlight pre .formula {
-  color: #c3e88d;
-}
-figure.highlight pre .keyword,
-figure.highlight pre .title,
-figure.highlight pre .css .hexcolor {
-  color: #89ddff;
-}
-figure.highlight pre .function,
-figure.highlight pre .python .decorator,
-figure.highlight pre .python .title,
-figure.highlight pre .ruby .function .title,
-figure.highlight pre .ruby .title .keyword,
-figure.highlight pre .perl .sub,
-figure.highlight pre .javascript .title,
-figure.highlight pre .coffeescript .title {
-  color: #82aaff;
-}
-figure.highlight pre .tag .attr,
-figure.highlight pre .javascript .function {
-  color: #c792ea;
-}
-.container figure.highlight .line:before {
-  display: inline-block;
-  padding: 0 6px 0 0;
-  min-width: 30px;
-  color: var(--hlnumber-color);
-  content: counter(line);
-  counter-increment: line;
-  text-align: left;
-}
-.container figure.highlight .line.marked {
-  background-color: rgba(113,124,180,0.314);
-}
-.container figure.highlight table {
-  display: block;
-  overflow: auto;
-  border: none;
-}
-.container figure.highlight table td {
-  padding: 0;
-  border: none;
-}
-.container figure.highlight .gutter pre {
-  padding-right: 10px;
-  padding-left: 10px;
-  background-color: var(--hlnumber-bg);
-  color: var(--hlnumber-color);
-  text-align: right;
-}
-.container figure.highlight .code pre {
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 100%;
+.container pre[class*='language-'] .caption a {
+  padding: 0 !important;
 }
 .container pre,
 .container figure.highlight {
@@ -1678,8 +1684,6 @@ figure.highlight pre .javascript .function {
   background: var(--hl-bg);
   color: var(--hl-color);
   line-height: 1.6;
-  counter-reset: line;
-  white-space: pre-wrap;
 }
 .container pre,
 .container code {
