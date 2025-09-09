@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Deep Fusion Clustering Network</title>
+      <link href="/2025/09/08/DFCN/"/>
+      <url>/2025/09/08/DFCN/</url>
+      
+        <content type="html"><![CDATA[<h1 id="📖-论文阅读记录"><a href="#📖-论文阅读记录" class="headerlink" title="📖 论文阅读记录"></a>📖 论文阅读记录</h1><h2 id="1-基本信息"><a href="#1-基本信息" class="headerlink" title="1. 基本信息"></a>1. 基本信息</h2><ul><li><strong>论文题目</strong>：  Deep Fusion Clustering Network</li><li><strong>作者&#x2F;机构</strong>：  National University of Defense Technology</li><li><strong>会议&#x2F;期刊</strong>：  AAAI</li><li><strong>年份</strong>：  2021</li></ul><!-- - **论文链接**： [PDF/Arxiv](https://example.com)   --><hr><h2 id="2-研究背景"><a href="#2-研究背景" class="headerlink" title="2. 研究背景"></a>2. 研究背景</h2><ul><li>研究领域：深度聚类</li><li>主要问题：  <ol><li>缺乏动态融合机制来选择性整合和精炼图结构与节点属性的信息以达成共识表示学习；</li><li>未能从双方提取信息以生成鲁棒的目标分布（即“真实”软标签）。</li></ol></li><li>相关工作：  <ol><li>属性图聚类</li><li>目标分布生成</li></ol></li></ul><hr><h2 id="3-核心贡献"><a href="#3-核心贡献" class="headerlink" title="3. 核心贡献"></a>3. 核心贡献</h2><ul><li>✨ 创新点：通过SAIF模块实现AE与IGAE的特征深度融合</li></ul><hr><h2 id="4-方法"><a href="#4-方法" class="headerlink" title="4. 方法"></a>4. 方法</h2><ul><li><strong>SAIF总体框架</strong>：</li></ul><div align="center"><p><img src="/img/DFCN/0.png" alt="framework"></p></div><ul><li><strong>标号</strong>：</li></ul><div align="center"><p><img src="/img/DFCN/2.png" alt="notation"></p></div><ul><li><strong>Fusion-based Autoencoders</strong></li></ul><br><div align="center"><p><img src="/img/DFCN/6.png" alt="notation"></p></div><ul><li><strong>Structure and Attribute Information Fusion</strong></li></ul><br><div align="center"><p><img src="/img/DFCN/7.png" alt="notation"><br><img src="/img/DFCN/8.png" alt="notation"></p></div><ul><li><strong>Joint loss and Optimization</strong></li></ul><div align="center"><p><img src="/img/DFCN/5.png" alt="notation"></p></div><hr><h2 id="5-实验"><a href="#5-实验" class="headerlink" title="5. 实验"></a>5. 实验</h2><ul><li>数据集：  三个图数据集（ACM、DBLP、CITE）和三个非图数据集（USPS、HHAR、REUT）</li><li>评价指标： 准确率（ACC）、归一化互信息（NMI）、平均兰德指数（ARI）和宏观F1分数（F1）</li></ul><hr><!-- ## 6. 总结与评价- 👍 优点：  - 👎 局限性：  - 💡 可以改进的地方：  ---## 7. 个人思考- 与我研究/兴趣的联系：  - 可以借鉴的思路：  - 疑问：  --- --><!-- ## 8. 参考资料 --><!-- - [相关论文1]()   --><!-- - [相关论文2]()   -->]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>单细胞算法典型任务</title>
       <link href="/2025/09/08/Single-Cell_Task/"/>
       <url>/2025/09/08/Single-Cell_Task/</url>
