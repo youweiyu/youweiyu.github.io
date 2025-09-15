@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>基于代码理解MAFN</title>
+      <link href="/2025/09/11/MAFN/"/>
+      <url>/2025/09/11/MAFN/</url>
+      
+        <content type="html"><![CDATA[<h1 id="📖-论文阅读记录"><a href="#📖-论文阅读记录" class="headerlink" title="📖 论文阅读记录"></a>📖 论文阅读记录</h1><h2 id="1-基本信息"><a href="#1-基本信息" class="headerlink" title="1. 基本信息"></a>1. 基本信息</h2><ul><li><strong>论文题目</strong>：  Multi-View Adaptive Fusion Network for Spatially Resolved Transcriptomics Data Clustering</li><li><strong>作者&#x2F;机构</strong>：  China University of Geosciences</li><li><strong>会议&#x2F;期刊</strong>：  IEEE TRANSACTIONS</li><li><strong>年份</strong>：  DECEMBER 2024</li><li><strong>论文链接</strong>： <a href="https://ieeexplore.ieee.org/document/10648721">MAFN_IEEE</a></li></ul><hr><h2 id="2-方法总览"><a href="#2-方法总览" class="headerlink" title="2. 方法总览"></a>2. 方法总览</h2><ul><li><p><strong>总体框架</strong>：  </p><div align="center"><p>！<a href="img/MAFN/1.png">img</a>  </p></div></li><li><p><strong>关键技术点</strong>：  </p><ul><li>方法A：  </li><li>方法B：  </li><li>方法C：</li></ul></li></ul><hr><h2 id="8-参考资料"><a href="#8-参考资料" class="headerlink" title="8. 参考资料"></a>8. 参考资料</h2><ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/37466210/">Spatial-MGCN</a>  </li><li><a href="https://cdn.aaai.org/ojs/20392/20392-13-24405-1-2-20220628.pdf">scTAG</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Deep Fusion Clustering Network</title>
       <link href="/2025/09/08/DFCN/"/>
       <url>/2025/09/08/DFCN/</url>
