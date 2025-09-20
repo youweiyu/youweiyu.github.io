@@ -4,7 +4,32 @@
   
     
     <entry>
-      <title>Several ST Papers</title>
+      <title>Spatial-MGCN and MAFN细节补充</title>
+      <link href="/2025/09/20/Spatial-MGCN/"/>
+      <url>/2025/09/20/Spatial-MGCN/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="Spatial-MGCN"><a href="#Spatial-MGCN" class="headerlink" title="Spatial-MGCN"></a>Spatial-MGCN</h2><ul><li><strong>标题</strong>： Spatial-MGCN: a novel multi-view graph convolutional network for identifying spatial domains with attention mechanism</li><li><strong>作者</strong>： Hunan University</li><li><strong>发表会议&#x2F;期刊</strong>：Briefings in Bioinformatics</li><li><strong>年份</strong>：2023</li><li><strong>链接</strong>：<a href="https://academic.oup.com/bib/article/24/5/bbad262/7225995?login=false">Spatial-MGCN</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><p>Motivation：While increasingly computational methods have been developed for spatial domain detection, most of them cannot adaptively learn the complex relationship between gene expression and spatial information, leading to sub-optimal performance.</p></li><li><p>本文可以视作MAFN的“前身”，主要区别可能是特征图和空间图的融合方式和部分模块细节。</p></li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/Spatial-MGCN/0.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p>  <div align="center"><p>  <img src="/img/Spatial-MGCN/1.png" alt="Generalization"><br>  <img src="/img/Spatial-MGCN/2.png" alt="Generalization"><br>  <img src="/img/Spatial-MGCN/3.png" alt="Generalization"><br>  <img src="/img/Spatial-MGCN/4.png" alt="Generalization"><br>  <img src="/img/Spatial-MGCN/5.png" alt="Generalization"></p>  </div></li></ul><h2 id="MAFN细节补充"><a href="#MAFN细节补充" class="headerlink" title="MAFN细节补充"></a>MAFN细节补充</h2><ul><li><p>方法概述：</p>  <div align="center"><p>  <img src="/img/MAFN/a.png" alt="Generalization"><br>  <img src="/img/MAFN/b.png" alt="Generalization"><br>  <img src="/img/MAFN/c.png" alt="Generalization"><br>  <img src="/img/MAFN/d.png" alt="Generalization"><br>  <img src="/img/MAFN/e.png" alt="Generalization"></p>  </div></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>STMGraph</title>
       <link href="/2025/09/17/STMGraph/"/>
       <url>/2025/09/17/STMGraph/</url>
       
