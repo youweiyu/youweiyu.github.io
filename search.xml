@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>STAGATE</title>
+      <link href="/2025/09/20/STAGATE/"/>
+      <url>/2025/09/20/STAGATE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="STMGraph"><a href="#STMGraph" class="headerlink" title="STMGraph"></a>STMGraph</h2><ul><li><strong>标题</strong>：Deciphering spatial domains from spatially resolved transcriptomics with an adaptive graph attention auto-encoder</li><li><strong>作者</strong>：University of Chinese Academy of Sciences</li><li><strong>发表会议&#x2F;期刊</strong>：Nature Communications</li><li><strong>年份</strong>：2022</li><li><strong>链接</strong>：<a href="https://www.nature.com/articles/s41467-022-29439-6">STAGATE</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><strong>Motivation</strong>: 邻域相似性是预定义的，无法自适应学习。</li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/STAGATE/0.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p><ol><li><p>Construction of SNN (Construction of cell type-aware SNN (optional))</p></li><li><p>Graph attention auto-encoder</p><ul><li>Encoder</li></ul> <div align="center"><p> <img src="/img/STAGATE/1.png" alt="Generalization"></p> </div><ul><li>Decoder (迭代和encoder相似)</li></ul> <div align="center"><p> <img src="/img/STAGATE/2.png" alt="Generalization"></p> </div><ul><li>graph attention layer</li></ul> <div align="center"><p> <img src="/img/STAGATE/3.png" alt="Generalization"></p> </div><p> -graph attention layer with cell type-aware SNN</p> <div align="center"><p> <img src="/img/STAGATE/4.png" alt="Generalization"></p> </div><ul><li>Loss function</li></ul> <div align="center"><p> <img src="/img/STAGATE/5.png" alt="Generalization"></p> </div></li></ol></li></ul><h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><ol><li>Clustering based on STAGATE embeddings (mclust || Louvain)</li><li>Spatial trajectory inference</li><li>Identifying differentially expressed genes</li><li>Identification of 3D spatial domains using STAGATE</li></ol><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Spatial-MGCN and MAFN细节补充</title>
       <link href="/2025/09/20/Spatial-MGCN/"/>
       <url>/2025/09/20/Spatial-MGCN/</url>
