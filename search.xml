@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>DeepST</title>
+      <link href="/2025/09/21/DeepST/"/>
+      <url>/2025/09/21/DeepST/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="DeepST"><a href="#DeepST" class="headerlink" title="DeepST"></a>DeepST</h2><ul><li><strong>标题</strong>： DeepST: identifying spatial domains in spatial transcriptomics by deep learning</li><li><strong>作者</strong>：Harbin Institute of Technology</li><li><strong>发表会议&#x2F;期刊</strong>：Nucleic Acids Research</li><li><strong>年份</strong>：2022</li><li><strong>链接</strong>：<a href="https://academic.oup.com/nar/article/50/22/e131/6761985">DeepST</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><strong>Motivation</strong>:<ol><li>先前方法主要依赖线性主成分分析来提取基因表达的高变特征，因此无法建模复杂的非线性相互作用</li><li>未充分利用空间信息，且在预测组织结构方面存在局限</li><li>大多数分析大量ST数据的空间方法无法正确校正批次效应，且不能处理其他空间组学数据，使其通用性不足</li></ol></li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/DeepST/0.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p><ol><li><p><strong>Spatial data augmentation</strong>(平滑补偿机制):</p><ul><li>基因表达相关性（GCij）​​：基于标准化后的余弦距离计算点对间表达谱相似性；</li><li>形态学相似性（MSij）​​：<ul><li>从H&amp;E图像提取局部区块，经数据增强（旋转、锐化等）后通过预训练CNN（如Inception v3）提取2048维特征；</li><li>使用PCA降维至50维主成分，最终通过余弦距离量化形态相似性；</li></ul></li><li>空间邻近性（SWij）​​：基于坐标计算点间距离，定义半径γ（最近4点距离均值+方差）作为邻居判定阈值。</li></ul> <div align="center"><p> <img src="/img/DeepST/1.png" alt="Generalization"></p> </div></li><li><p><strong>Graph construction</strong>:</p><ul><li>基于空间坐标计算spots间距离，使用BallTree算法，默认top12为邻居，构建Graph</li></ul></li><li><p><strong>Denoising autoencoder</strong>：</p> <div align="center"><p> <img src="/img/DeepST/2.png" alt="Generalization"></p> </div></li><li><p><strong>Variational graph autoencoder</strong>(VAE)：</p> <div align="center"><p> <img src="/img/DeepST/3.png" alt="Generalization"></p> </div></li><li><p><strong>Domain adversarial neural networks</strong>:</p><ul><li>目的：DAN的目的是将不同分布的源域和目标域映射到同一特征空间，使空间中的距离尽可能接近。</li></ul> <div align="center"><p> <img src="/img/DeepST/4.png" alt="Generalization"></p> </div></li></ol></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>STAGATE</title>
       <link href="/2025/09/20/STAGATE/"/>
       <url>/2025/09/20/STAGATE/</url>
@@ -29,7 +54,7 @@
     
     
     <entry>
-      <title>Spatial-MGCN and MAFN细节补充</title>
+      <title>Spatial-MGCN and MAFN details supplement</title>
       <link href="/2025/09/20/Spatial-MGCN/"/>
       <url>/2025/09/20/Spatial-MGCN/</url>
       
@@ -58,7 +83,7 @@
       <link href="/2025/09/17/STMGraph/"/>
       <url>/2025/09/17/STMGraph/</url>
       
-        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="STMGraph"><a href="#STMGraph" class="headerlink" title="STMGraph"></a>STMGraph</h2><ul><li><strong>标题</strong>： STMGraph: spatial-context-aware of transcriptomes via a dual-remasked dynamic graph attention model</li><li><strong>作者</strong>： Fujian Agriculture and Forestry University</li><li><strong>发表会议&#x2F;期刊</strong>：Briefings in Bioinformatics</li><li><strong>年份</strong>：2025</li><li><strong>链接</strong>：<a href="https://academic.oup.com/bib/article/26/1/bbae685/7943385">STMGraph</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><p>Motivation：the current ST integration algorithm ignores for ST dropouts, which impedes the spatial-aware of ST features, resulting in challenges in the accuracy and robustness of microenvironmental heterogeneity detecting, spatial domain clustering, and batch-effects correction.</p></li><li><p>现有ST域聚类方法分类：生成式(generative)图自监督学习（Graph SSL）和对比式(contrastive)图自监督学习</p><table><thead><tr><th>方法类别</th><th>代表方法</th></tr></thead><tbody><tr><td>Generative Graph SSL</td><td>DeepST, STAGATE, Spatial-MGCN</td></tr><tr><td>Contrastive Graph SSL</td><td>GraphST, conST, SpaceFlow</td></tr></tbody></table></li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/STMGraph/3.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p><ol><li>Mask-Remask Mechanism</li><li>Dynamic graph attention model(DGAT)</li><li>Dual-View Remask</li><li>Loss function</li></ol>  <div align="center"><p>  <img src="/img/STMGraph/2.png" alt="loss"></p>  </div></li></ul><h2 id="个人评价与思考"><a href="#个人评价与思考" class="headerlink" title="个人评价与思考"></a>个人评价与思考</h2><ul><li>启发：<ol><li>随机掩蔽50%节点模拟真实ST数据中的dropout事件，迫使模型学习在部分特征缺失下的推理能力。</li><li>对编码器输出嵌入H进行二次随机掩蔽（50%），进一步破坏特征，迫使解码器从更抽象的表示中重建原始数据，增强嵌入的鲁棒性和泛化性。</li></ol></li></ul><hr>]]></content>
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="STMGraph"><a href="#STMGraph" class="headerlink" title="STMGraph"></a>STMGraph</h2><ul><li><strong>标题</strong>： STMGraph: spatial-context-aware of transcriptomes via a dual-remasked dynamic graph attention model</li><li><strong>作者</strong>： Fujian Agriculture and Forestry University</li><li><strong>发表会议&#x2F;期刊</strong>：Briefings in Bioinformatics</li><li><strong>年份</strong>：2025</li><li><strong>链接</strong>：<a href="https://academic.oup.com/bib/article/26/1/bbae685/7943385">STMGraph</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><p>Motivation：the current ST integration algorithm ignores for ST dropouts, which impedes the spatial-aware of ST features, resulting in challenges in the accuracy and robustness of microenvironmental heterogeneity detecting, spatial domain clustering, and batch-effects correction.</p></li><li><p>现有ST域聚类方法分类：生成式(generative)图自监督学习（Graph SSL）和对比式(contrastive)图自监督学习</p><table><thead><tr><th>方法类别</th><th>代表方法</th></tr></thead><tbody><tr><td>Generative Graph SSL</td><td>DeepST, STAGATE, Spatial-MGCN</td></tr><tr><td>Contrastive Graph SSL</td><td>GraphST, conST, SpaceFlow</td></tr></tbody></table></li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/STMGraph/0.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p><ol><li>Mask-Remask Mechanism</li><li>Dynamic graph attention model(DGAT)</li><li>Dual-View Remask</li><li>Loss function</li></ol>  <div align="center"><p>  <img src="/img/STMGraph/1.png" alt="loss"></p>  </div></li></ul><h2 id="个人评价与思考"><a href="#个人评价与思考" class="headerlink" title="个人评价与思考"></a>个人评价与思考</h2><ul><li>启发：<ol><li>随机掩蔽50%节点模拟真实ST数据中的dropout事件，迫使模型学习在部分特征缺失下的推理能力。</li><li>对编码器输出嵌入H进行二次随机掩蔽（50%），进一步破坏特征，迫使解码器从更抽象的表示中重建原始数据，增强嵌入的鲁棒性和泛化性。</li></ol></li></ul><hr>]]></content>
       
       
       <categories>
