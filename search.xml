@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>GraphST</title>
+      <link href="/2025/09/21/GraphST/"/>
+      <url>/2025/09/21/GraphST/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="GraphST"><a href="#GraphST" class="headerlink" title="GraphST"></a>GraphST</h2><ul><li><strong>标题</strong>： Spatially informed clustering, integration,and deconvolution of spatial transcriptomics with GraphST</li><li><strong>作者</strong>：National University of Singapore (NUS)</li><li><strong>发表会议&#x2F;期刊</strong>：Nature Communications</li><li><strong>年份</strong>：2023</li><li><strong>链接</strong>：<a href="https://www.nature.com/articles/s41467-023-36796-3">GraphST</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><strong>Motivation</strong>:<ol><li>反卷积未利用空间信息</li><li>多样本整合未利用空间信息</li></ol></li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/GraphST/0.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p><ol><li><p><strong>graph self-supervised contrastive learning framework</strong>：</p><ul><li>data augmentation</li><li>GNN-based encoder for representation learning</li></ul> <div align="center"><p> <img src="/img/GraphST/1.png" alt="Generalization"></p> </div><ul><li>self-supervised contrastive learning for representation refinement</li></ul> <div align="center"><p> <img src="/img/GraphST/2.png" alt="Generalization"><br> <img src="/img/GraphST/3.png" alt="Generalization"><br> <img src="/img/GraphST/4.png" alt="Generalization"></p> </div></li><li><p><strong>Vertical and horizontal integration of multiple tissues via implicit batch effect correction</strong>(By PASTE)</p></li><li><p><strong>Spatially informed contrastive learning for scRNA-seq and ST data integration</strong></p> <div align="center"><p> <img src="/img/GraphST/5.png" alt="Generalization"><br> <img src="/img/GraphST/6.png" alt="Generalization"></p> </div><ol><li>Spot-targeted annotation transfer</li><li>Domain-targeted annotation transfer</li></ol> <div align="center"><p> <img src="/img/GraphST/7.png" alt="Generalization"><br> <img src="/img/GraphST/8.png" alt="Generalization"></p> </div></li></ol></li></ul><h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><ol><li>Spatial clustering</li><li>Multi-sample integration</li><li>ST and scRNA-seq integration</li></ol><h2 id="完结撒花"><a href="#完结撒花" class="headerlink" title="完结撒花"></a>完结撒花</h2><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DeepST</title>
       <link href="/2025/09/21/DeepST/"/>
       <url>/2025/09/21/DeepST/</url>
