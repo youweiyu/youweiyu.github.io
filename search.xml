@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>stLearn</title>
+      <link href="/2025/09/22/stLearn/"/>
+      <url>/2025/09/22/stLearn/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="GraphST"><a href="#GraphST" class="headerlink" title="GraphST"></a>GraphST</h2><ul><li><strong>标题</strong>：  Robust mapping of spatiotemporal trajectories and cell–cell interactions in healthy and diseased tissues</li><li><strong>作者</strong>：The University of Queensland</li><li><strong>发表会议&#x2F;期刊</strong>：Nature Communications</li><li><strong>年份</strong>：2023</li><li><strong>链接</strong>：<a href="https://doi.org/10.1038/s41467-023-43120-6">stLearn</a></li></ul><h2 id="主要内容简介"><a href="#主要内容简介" class="headerlink" title="主要内容简介"></a>主要内容简介</h2><ul><li><p><strong>Motivation</strong>:</p><ol><li>the (re)construction of spatio-temporal trajectories</li><li>the study of cell–cell interactions</li><li>the improvement of spatial data quality by imputation</li></ol></li></ul><h2 id="方法与创新点"><a href="#方法与创新点" class="headerlink" title="方法与创新点"></a>方法与创新点</h2><ul><li><p><strong>总体框架</strong>：</p>  <div align="center"><p>  <img src="/img/stLearn/0.png" alt="Generalization"></p>  </div></li><li><p>方法概述：</p><ol><li><p>pseudo-time-space (PSTS) for <strong>spatio-temporal trajectory inference</strong></p> <div align="center"><p> <img src="/img/stLearn/1.png" alt="Generalization"></p> </div><ol><li><p>DPT 与 Space 融合的算法</p></li><li><p><strong>伪时间距离Dpt</strong>:</p> <div align="center"><p> <img src="/img/stLearn/2.png" alt="Generalization"></p> </div></li><li><p><strong>空间距离Ds和伪时空距离Dpts</strong>:</p> <div align="center"><p> <img src="/img/stLearn/3.png" alt="Generalization"></p> </div></li></ol></li><li><p>spatially-constrained two-level permutation (SCTP) test</p> <div align="center"><p> <img src="/img/stLearn/4.png" alt="Generalization"></p> </div></li><li><p>spatial graph-based imputation method with neural network (stSME)</p> <div align="center"><p> <img src="/img/stLearn/5.png" alt="Generalization"></p> </div></li></ol></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bio-AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GraphST</title>
       <link href="/2025/09/21/GraphST/"/>
       <url>/2025/09/21/GraphST/</url>
