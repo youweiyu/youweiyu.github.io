@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>RALI</title>
+      <link href="/2026/04/23/RALI/"/>
+      <url>/2026/04/23/RALI/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h1><h2 id="RALI"><a href="#RALI" class="headerlink" title="RALI"></a>RALI</h2><ul><li><strong>标题</strong>：REASONING AS REPRESENTATION: RETHINKING VISUAL REINFORCEMENT LEARNING IN IMAGE QUALITY ASSESSMENT</li><li><strong>作者</strong>：Bytedance &amp; PKU</li><li><strong>发表会议&#x2F;期刊</strong>：ICLR</li><li><strong>年份</strong>：2026</li><li><strong>链接</strong>：<a href="https://arxiv.org/pdf/2510.11369">RALI</a></li></ul><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><ul><li><p><strong>Topic</strong>: this paper focuses on the source of generalization of RL-based IQA models (e.g., Q-Insight)</p></li><li><p><strong>Motivation</strong>:</p><ul><li>引入视觉强化学习的IQA模型，其泛化能力提升背后的原理缺乏系统性分析（尽管已有研究在其他领域探索了强化学习的泛化，但图像质量评估任务中视觉特征的独特复杂性和质量评估的主观性，使得这些发现难以直接迁移）</li><li>逐步推理会带来高延迟和高加载开销，限制了在在线强化学习、移动端和实时场景中的部署</li></ul></li><li><p><strong>two critical questions(RACT &amp; RALI)</strong>:</p><ul><li>How is generalization related to reasoning in IQA ?:<ol><li>像 Q-Insight 这样的基于推理的模型不再依赖于冗长的视觉 Token，而是依赖于简洁、紧凑的质量推理文本 Token</li><li>文本表示可以缓解领域差异</li><li>推理过程本身，即图像到质量推理文本的转换，与特定数据集的相关性较弱，并且可以在不同领域间保持稳定的对齐</li></ol></li><li>is it essential?:<ol><li>现有的基于 CLIP 的图像质量评估方法有类似的尝试，但存在两个缺陷：与通用文本的浅层对齐（非质量特定）以及过于简化的文本语料库</li></ol></li></ul></li><li><p><strong>RALI Step</strong>:</p><ul><li>首先，我们通过强化学习获取图像-文本-分数的三元组数据</li><li>其次，我们通过基于 CLIP 的对比学习将图像与质量推理文本对齐</li><li>最后，对于文本分数空间，我们利用描述-分数对来定义一个更高维、更精细的分数映射空间</li></ul></li><li><p><strong>Conclusion</strong>:</p><ul><li>基于推理的图像质量评估模型的泛化能力，其根源在于将视觉信息压缩为文本表示，并且这一发现得到了RACT的进一步证实</li><li>证明了通过RALI，一种不包含推理过程、也不依赖于大语言模型的框架，可以实现同等水平的泛化能力</li></ul></li></ul><h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ul><li><p><strong>Revisiting Reasoning-Based MLLMs in IQA</strong>：</p><ul><li><p>通过强化学习，推理模型将其对图像质量评分的依赖从视觉 Token 转移到了推理文本 Token，并且其文本 Token 更简洁，与图像质量更相关。<br>  <img src="/img/RALI/2.png" alt="Generalization"></p></li><li><p>在表示能力相当的水平下，更紧凑的表示展现出更好的泛化能力，而文本就表现出这种特性。<br>  <img src="/img/RALI/3.png" alt="Generalization"></p></li><li><p>Answer first question: 强化学习使模型能够获得一种高度可泛化的、从视觉 Token 到文本 Token 的压缩策略, 由于文本 Token 强大的表示能力和泛化性，评分过程展现出优异的泛化能力。</p></li><li><p><em>RACT</em>: 推理对齐的跨域训练框架<br>  <img src="/img/RALI/4.png" alt="RACT"></p></li></ul></li><li><p><strong>Reasoning-Aligned Lightweight IQA Framework</strong>:</p><ul><li><strong>RALI</strong>:<br>  <img src="/img/RALI/5.png" alt="RALI"></li><li><em>Contrasive Alignment</em>:<ul><li>image–text contrastive learning loss</li><li>冻结文本编码器，只训练图像编码器</li></ul></li><li><em>feature compression</em>:<br>  <img src="/img/RALI/6.png" alt="fc"></li><li><em>scoring definition</em>:<br>  <img src="/img/RALI/7.png" alt="sd"><ul><li>以 PCA 和分桶 k-means 的结果作为初始化</li></ul></li></ul></li></ul><h2 id="Experiments"><a href="#Experiments" class="headerlink" title="Experiments"></a>Experiments</h2><ul><li><strong>Results of Score Regression</strong>:<ul><li><em>Results of Single-dataset Training with RALI</em>:<br>  <img src="/img/RALI/8.png" alt="re"></li><li><em>Results of Multi-dataset Co-training with RACT</em>:<br>  <img src="/img/RALI/9.png" alt="re"></li></ul></li><li><strong>Ablation Study</strong>:<ul><li><em>Ablation on RALI’s Key Components</em>:<br>  <img src="/img/RALI/10.png" alt="re"></li><li><em>Ablation on Labels and Training Modules in RACT</em>:<br>  <img src="/img/RALI/11.png" alt="re"></li><li><em>Efficiency Studies of RALI</em>:<br>  <img src="/img/RALI/12.png" alt="re"></li></ul></li></ul><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p><em>本文揭示了IQA中推理即语义表示压缩的本质，并据此提出两大框架：RACT通过质量推理文本来对齐跨域数据分布，实现SOTA泛化；RALI则用对比学习完全取代推理，在性能相当的前提下，将参数量与推理开销降低超95%。</em></p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MAVEN-ARG</title>
       <link href="/2026/04/15/MAVEN-ARG/"/>
       <url>/2026/04/15/MAVEN-ARG/</url>
