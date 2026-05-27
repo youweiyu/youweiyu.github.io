@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Constitutional AI</title>
+      <link href="/2026/05/27/Constitutional_AI/"/>
+      <url>/2026/05/27/Constitutional_AI/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文阅读记录"><a href="#论文阅读记录" class="headerlink" title="论文阅读记录"></a>论文阅读记录</h1><h2 id="Constitutional-AI"><a href="#Constitutional-AI" class="headerlink" title="Constitutional AI"></a>Constitutional AI</h2><ul><li><strong>标题</strong>：Constitutional AI: Harmlessness from AI Feedback</li><li><strong>作者</strong>：Anthropic</li><li><strong>年份</strong>：2022</li><li><strong>链接</strong>：<a href="https://arxiv.org/pdf/2212.08073">Cai</a></li></ul><h2 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h2><ul><li><p><strong>Motivation</strong>:</p><ul><li><p><em>Scaling Supervision</em>: leverage AI to help humans to more efficiently supervise AI</p><ul><li>AI supervision may be more efficient than collecting human feedback</li><li>AI systems can already perform some tasks at or beyond human level</li><li>Visualization:<br>  <img src="/img/Cai/1.png" alt="1"><br>  <img src="/img/Cai/2.png" alt="2"></li></ul></li><li><p><em>A Harmless but Non-Evasive (Still Helpful) Assistant</em></p></li><li><p><em>Simplicity and Transparency</em></p></li></ul></li><li><p><strong>The Constitutional AI Approach</strong>: human supervision will come entirely from a set of principles</p><ul><li><em>(Supervised Stage) Critique → Revision → Supervised Learning</em><br>  -<em>(RL Stage) AI Comparison Evaluations → Preference Model → Reinforcement Learning</em></li></ul></li><li><p><strong>Models and Data</strong>: Helpful 模型 (H), Helpful &amp; Harmless 模型 (HH)</p></li><li><p><strong>Constitutional AI: Critiques, Revisions, and Supervised Learning</strong>:</p><ul><li><em>Method</em>:<br>  <img src="/img/Cai/3.png" alt="2"><br>  <img src="/img/Cai/4.png" alt="2"><br>  <img src="/img/Cai/5.png" alt="2"><br>  <img src="/img/Cai/6.png" alt="2"></li><li><em>Results</em>:<ul><li>H-RLHF<br>  <img src="/img/Cai/7.png" alt="2"></li><li>Numbers of Revisions<br>  <img src="/img/Cai/8.png" alt="2"></li><li>w&#x2F;o critique<br>  <img src="/img/Cai/9.png" alt="9"></li></ul></li></ul></li><li><p><strong>Constitutional AI: Reinforcement Learning from AI Feedback</strong></p><ul><li><p><em>Method</em>:<br>  <img src="/img/Cai/10.png" alt="10"><br>  <img src="/img/Cai/11.png" alt="10"><br>  <img src="/img/Cai/12.png" alt="10"></p></li><li><p><em>Results</em>:<br>  <img src="/img/Cai/13.png" alt="10"><br>  <img src="/img/Cai/14.png" alt="10"><br>  <img src="/img/Cai/15.png" alt="10"></p></li><li><p><em>optimization</em>:Constitutional Principles, Ensembling, Preference Labels (Soft vs. Hard vs. Clamped)</p></li><li><p><em>Harmlessness vs. Evasiveness</em><br>  <img src="/img/Cai/16.png" alt="10"></p></li></ul></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 论文阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LLM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RALI</title>
       <link href="/2026/04/23/RALI/"/>
       <url>/2026/04/23/RALI/</url>
