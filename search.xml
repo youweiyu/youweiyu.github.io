@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MvSCN</title>
+      <link href="/2026/05/30/MvSCN/"/>
+      <url>/2026/05/30/MvSCN/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Meta"><a href="#Meta" class="headerlink" title="Meta"></a>Meta</h1><ul><li><strong>Title</strong>：Multi-view Spectral Clustering Network</li><li><strong>Author</strong>：Sichuan University</li><li><strong>Conference</strong>：IJCAI</li><li><strong>Year</strong>：2019</li><li><strong>Link</strong>：<a href="https://www.ijcai.org/Proceedings/2019/0356.pdf">MvSCN</a></li></ul><h1 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><ul><li><p>the key to discriminative MvC is formulating the within-view similarity and the between-view consistency</p></li><li><p><strong>Contribution</strong>:</p><ul><li>learning the local invariance by SiameseNet</li><li>construct an orthogonal layer and propose an optimization method</li><li>the proposed MvSCN could be the first deep extension of multi-view spectral clustering</li></ul></li></ul><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><ul><li><p><strong>Spectral Clustering</strong><br>  <img src="/img/MvSCN/1.png" alt="Graph"></p></li><li><p><strong>Multi-view Spectral Clustering</strong><br>  <img src="/img/MvSCN/2.png" alt="Graph"></p></li></ul><h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ul><li><p><strong>Framework</strong><br>  <img src="/img/MvSCN/0.png" alt="Graph"></p></li><li><p><strong>Objective Function</strong><br>  <img src="/img/MvSCN/3.png" alt="Graph"><br>  <img src="/img/MvSCN/4.png" alt="Graph"></p></li><li><p>recasting the <em>orthogonal constraint</em> as the top layer of neural network through the following theorem：<br>  <img src="/img/MvSCN/5.png" alt="Graph"></p></li><li><p><strong>Affinity Learning</strong>：<br>  <img src="/img/MvSCN/6.png" alt="Graph"><br>  <img src="/img/MvSCN/7.png" alt="Graph"></p></li><li><p><strong>Network Architecture and Training</strong>，details in framework</p></li></ul><h2 id="Experiment"><a href="#Experiment" class="headerlink" title="Experiment"></a>Experiment</h2><p><img src="/img/MvSCN/8.png" alt="Graph"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper Reading </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cluster </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Constitutional AI</title>
       <link href="/2026/05/27/Constitutional_AI/"/>
       <url>/2026/05/27/Constitutional_AI/</url>
@@ -13,7 +38,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -38,7 +63,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -63,7 +88,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -88,7 +113,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -113,7 +138,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -138,7 +163,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -163,7 +188,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -188,7 +213,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -213,7 +238,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -238,7 +263,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -263,7 +288,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -288,7 +313,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -313,7 +338,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -338,7 +363,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -363,7 +388,7 @@
       
       <categories>
           
-          <category> 论文阅读 </category>
+          <category> Paper Reading </category>
           
       </categories>
       
@@ -388,14 +413,14 @@
       
       <categories>
           
-          <category> 为你写诗 </category>
+          <category> Essay </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> poetry </tag>
+            <tag> Poetry </tag>
             
         </tags>
       
@@ -420,7 +445,7 @@
       
         <tags>
             
-            <tag> 日常 </tag>
+            <tag> daily </tag>
             
         </tags>
       
@@ -445,7 +470,7 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
+            <tag> Essay </tag>
             
         </tags>
       
